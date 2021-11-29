@@ -1,14 +1,10 @@
-﻿// Написать программу вычисления значения функции y = f(a) y = a^3 * 2 + 15
+﻿// Выяснить является ли число чётным
 
-double a = new Random().Next (1, 10);
+int a = new Random().Next(1, 35);
 Console.WriteLine(a);
-double y = Math.Pow (a, 3) * 2 + 15;
 
-double f(double a, double y)
-{
-    y = a * a * a * 2 + 15;
-    return y;
-}
-
-Console.WriteLine(y);
-
+int b = a % 2;
+if (b == 0)
+    Console.WriteLine("Четное");
+else
+    Console.WriteLine("Нечетное");

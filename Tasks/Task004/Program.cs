@@ -1,18 +1,13 @@
-﻿//По заданному номеру дня недели вывести его название
-int day = new Random().Next(1, 8);
-Console.WriteLine(day);
+﻿// Найти максимальное из трех чисел
+int numa = new Random().Next(1, 1000);
+Console.WriteLine(numa);
+int numb = new Random().Next(1, 1000);
+Console.WriteLine(numb);
+int numc = new Random().Next(1, 1000);
+Console.WriteLine(numc);
 
-if (day == 1)
-    Console.WriteLine("Сегодня Понедельник");
-if (day == 2)
-    Console.WriteLine("Сегодня Вторник");
-if (day == 3)
-    Console.WriteLine("Сегодня Среда");
-if (day == 4)
-    Console.WriteLine("Сегодня Четверг");
-if (day == 5)
-    Console.WriteLine("Сегодня Пятница");
-if (day == 6)
-    Console.WriteLine("Сегодня Суббота");
-if (day == 7)
-    Console.WriteLine("Сегодня Воскресенье");
+int max = numa;
+
+if (numb > max) max = numb;
+if (numc > max) max = numc;
+Console.WriteLine(max);

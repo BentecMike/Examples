@@ -1,13 +1,14 @@
-﻿// Найти максимальное из трех чисел
-int numa = new Random().Next(1, 1000);
-Console.WriteLine(numa);
-int numb = new Random().Next(1, 1000);
-Console.WriteLine(numb);
-int numc = new Random().Next(1, 1000);
-Console.WriteLine(numc);
+﻿// Написать программу вычисления значения функции y = f(a) y = a^3 * 2 + 15
 
-int max = numa;
+double a = new Random().Next (1, 10);
+Console.WriteLine(a);
+double y = Math.Pow (a, 3) * 2 + 15;
 
-if (numb > max) max = numb;
-if (numc > max) max = numc;
-Console.WriteLine(max);
+double f(double a, double y)
+{
+    y = a * a * a * 2 + 15;
+    return y;
+}
+
+Console.WriteLine(y);
+

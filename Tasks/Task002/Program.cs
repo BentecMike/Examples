@@ -1,8 +1,11 @@
-﻿// По двум заданным числам проверять является ли первое квадратом второго
-int a = 16; int b = new Random().Next(1, 10);
-Console.WriteLine(b);
+﻿//Даны два числа. Показать большее и меньшее число
+int number1 = new Random().Next(1, 20);
+Console.WriteLine(number1);
+int number2 = new Random().Next(1, 20);
+Console.WriteLine(number2);
 
-if (a == b * b)
-    Console.WriteLine("Первое число является квадратом второго");
+
+if (number1 > number2)
+    Console.WriteLine("Число 1 больше числа 2");
 else
-    Console.WriteLine("Первое число не является квадратом второго");
+    Console.WriteLine("Число 2 больше числа 1");

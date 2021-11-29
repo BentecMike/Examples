@@ -1,10 +1,14 @@
-﻿// Показать числа от -N до N
-int[] array = new int[5000000];
+﻿//Показать четные числа от 1 до N
 
-//int[] array = {-10, -9, -8, -7, -6, -5, -4, -3, -2, -2, -1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+int[] array = Enumerable.Range(1, 100000000).ToArray();
+
 int count = array.Length;
-for (int i = 0; i < array.Length - 1; i++)
+for (int i = 0; i < array.Length - 1;)
 {
-    array[i] = new Random().Next(-2014856, 25541617);
-    Console.Write($"{array[i]} ");
+    array[i] = i+1;
+    int prom = i % 2;
+    if (prom == 1)
+        Console.Write($"{array[i]} ");
+        i++;
+    
 }

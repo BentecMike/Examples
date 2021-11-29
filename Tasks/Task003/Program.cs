@@ -1,11 +1,18 @@
-﻿//Даны два числа. Показать большее и меньшее число
-int number1 = new Random().Next(1, 20);
-Console.WriteLine(number1);
-int number2 = new Random().Next(1, 20);
-Console.WriteLine(number2);
+﻿//По заданному номеру дня недели вывести его название
+int day = new Random().Next(1, 8);
+Console.WriteLine(day);
 
-
-if (number1 > number2)
-    Console.WriteLine("Число 1 больше числа 2");
-else
-    Console.WriteLine("Число 2 больше числа 1");
+if (day == 1)
+    Console.WriteLine("Сегодня Понедельник");
+if (day == 2)
+    Console.WriteLine("Сегодня Вторник");
+if (day == 3)
+    Console.WriteLine("Сегодня Среда");
+if (day == 4)
+    Console.WriteLine("Сегодня Четверг");
+if (day == 5)
+    Console.WriteLine("Сегодня Пятница");
+if (day == 6)
+    Console.WriteLine("Сегодня Суббота");
+if (day == 7)
+    Console.WriteLine("Сегодня Воскресенье");

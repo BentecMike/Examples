@@ -1,22 +1,13 @@
-﻿// Найти третью цифру числа или сообщить, что её нет
+﻿// Дано число. Проверить кратно ли оно 7 и 23 (1288 кратно)
 
-int a = new Random().Next(20, 999);
+int a = 1288; // new Random().Next(7, 999);
 Console.WriteLine(a);
-Console.WriteLine(a % 10);
-int a3 = a % 10;
-Console.WriteLine(a % 100 / 10);
-int a2 = a % 100 / 10;
-Console.WriteLine(a % 1000 / 100);
-int a1 = a % 1000 / 100;
-Console.WriteLine(a1);
+int b = a % 7;
+Console.WriteLine(b);
+int c = a % 23;
+Console.WriteLine(c);
 
-    if (a1 == 0 && a2 >= 0 && a3 >= 0) 
-             Console.WriteLine("Третьей цифры нет");
-    else
-            Console.WriteLine($"{a1} {"третья цифра числа"}");
-
-
-if (a1 >= 0 && a2 >= 0 && a3 == 0) 
-             Console.WriteLine("Третьей цифры нет");
-    else
-            Console.WriteLine($"{a3} {"третья цифра числа"}");
+if (b == 0 && c == 0)
+Console.WriteLine($"{a} {"кратно 7 и 23"}");
+else 
+Console.WriteLine($"{a} {"некратно 7 и 23"}");

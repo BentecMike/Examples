@@ -1,12 +1,13 @@
-﻿// Удалить вторую цифру трёхзначного числа
+﻿// Выяснить, кратно ли число заданному, если нет, вывести остаток
 
-int a = Convert.ToInt32(new Random().Next (100, 999));
- Console.WriteLine(a);
-     Console.WriteLine(a % 10);
-     int a3 = a % 10;
-     Console.WriteLine(a % 100/10);
-     int a2 = a % 100/10;
-     Console.WriteLine(a % 1000/100);
-     int a1 = a % 1000/100;
-     Console.Write(a1);
-    Console.Write(a3);
+int a = new Random().Next(2, 10);
+    Console.WriteLine(a);
+int b = new Random().Next(10, 20);
+    Console.WriteLine(b);
+    float c = b % a;
+    Console.WriteLine(c);
+
+if (c == 0)
+       Console.Write($"{a} {"является кратным"} {b}"); //$"Имя: {name}  Возраст: {age}  Рост: {height}м");
+else
+    Console.WriteLine($"{c} {"остаток от деления"}");
