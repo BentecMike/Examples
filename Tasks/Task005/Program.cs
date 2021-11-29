@@ -8,7 +8,6 @@ Console.WriteLine(numc);
 
 int max = numa;
 
-if (numa > max) max = numa;
 if (numb > max) max = numb;
 if (numc > max) max = numc;
 Console.WriteLine(max);
