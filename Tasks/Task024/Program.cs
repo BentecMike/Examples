@@ -1,7 +1,7 @@
 ﻿// Найти кубы чисел от 1 до N (N=20)
 
 int a;
-int N = 20;
+int N = 100;
 
 static int Kvadrat (int a)
     {
