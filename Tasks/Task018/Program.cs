@@ -1,24 +1,19 @@
 ﻿// Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
 
 
-bool x = true;
-bool y = false;
-bool a = !(x ^ y);
-bool b = !x & !y;
-Console.WriteLine(a = b);
- static Boolean methodB (bool x = false, bool y = false)
+static Boolean methodB(bool x = false, bool y = false)
 {
-    bool a = !(x ^ y);
-    bool b = !x & !y;
-    Console.WriteLine(a = b);
-    return a = b;
+    return !(x || y) == (!x && !y);
 }
-methodB(false, true);
 
-methodB(false, false);
+if (methodB(false, true) && methodB(false, false) && methodB(true, true) && methodB(true, false))
+{
+    Console.WriteLine("правдиво для всех наборов выражений");
+}
+else
+{
+    Console.WriteLine("ложно");
+}
 
-methodB(true, true);
-
-
-
+//доделать
 
