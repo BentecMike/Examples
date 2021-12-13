@@ -2,7 +2,7 @@
 
 int a = new Random().Next(20, 999);
 Console.WriteLine(a);
-Console.WriteLine(a % 10);
+//Console.WriteLine(a % 10);
 int a3 = a % 10;
 Console.WriteLine(a % 100 / 10);
 int a2 = a % 100 / 10;
