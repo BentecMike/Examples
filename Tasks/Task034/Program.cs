@@ -18,7 +18,7 @@ void PrintArray(int[] col)
     int position = 0;
     while (position < count)
     {
-        Console.WriteLine(col[position]);
+        Console.Write($"{col[position]}  ");
         position++;
     }
 }
@@ -29,7 +29,7 @@ void PrintArrayNew(int[] col)
     int position = 0;
     while (position < count)
     {
-        Console.WriteLine(col[position]*-1);
+        Console.Write($"{col[position]*-1}  ");
         position++;
     }
 }
@@ -38,5 +38,5 @@ int[] array = new int[12];
 
 FillArray(array);
 PrintArray(array);
-Console.WriteLine("now new array");
+Console.WriteLine();
 PrintArrayNew(array);
