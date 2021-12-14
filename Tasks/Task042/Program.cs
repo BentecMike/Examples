@@ -9,10 +9,14 @@ int count = 0;
 for (int index = 0; index < length; index++)
 {
     b = Convert.ToInt32(a[index]-'0');
-    Console.WriteLine(b);
+    Console.WriteLine(b); 
     if (b > 0)
     {
         count++;
     }
+    if (b < 0)
+    {
+        break;
+    }
 }
-Console.WriteLine($"{count} чисел больше нуля ввеедено с клавиатуры");
+Console.WriteLine($"{count} чисел больше нуля введено с клавиатуры");
